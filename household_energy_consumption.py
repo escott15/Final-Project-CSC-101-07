@@ -1,10 +1,49 @@
+from data import Household
 
 
-maindata = open('household_energy_consumption.txt', 'r')
-data_list = maindata.readlines()
-maindata.close()
+def create_households()->list[Household]:
+    main_data = open('household_energy_consumption.txt', 'r')
+    data_list = main_data.readlines()
+    main_data.close()
 
-print(data_list)
+    data_set = []
+    for string in data_list:
+        string = string.strip("\n")
+        new_list = string.split(',')
+        data_set.append(new_list)
+
+    i_d = data_set[0][0]
+    dates = []
+    energy_consumption_kwh = []
+    household_size = ''
+    avg_temp = []
+    has_ac = ''
+    peak_hours = []
+    house_data = []
+    for data in data_set:
+        if data[0] == i_d:
+            dates.append(data[1])
+            energy_consumption_kwh.append(float(data[2]))
+            household_size = data[3]
+            avg_temp.append(float(data[4]))
+            has_ac = data[5]
+            peak_hours.append(float(data[6]))
+        else:
+            house_data.append(Household(i_d, dates, energy_consumption_kwh, int(household_size),avg_temp,has_ac,peak_hours))
+            i_d = data[0]
+            dates = [data[1]]
+            energy_consumption_kwh = [float(data[2])]
+            household_size = data[3]
+            avg_temp = [float(data[4])]
+            has_ac = data[5]
+            peak_hours = [float(data[6])]
+    house_data.append(Household(i_d, dates, energy_consumption_kwh, int(household_size),avg_temp,has_ac,peak_hours))
+    return house_data
+
+print(create_households()[200])
+print(create_households()[201])
+print(create_households()[202])
+print(create_households()[203])
 
 
 
