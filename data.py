@@ -38,20 +38,20 @@ class Household:
                 self.peak_hours_kwh_usage))
 
     def calc_avg_consumption(self):
-        sum = 0
+        total = 0
         for n in self.energy_consumption_kwh:
-            sum += n
-        return sum / len(self.energy_consumption_kwh)
+            total += n
+        return total / len(self.energy_consumption_kwh)
 
     def calc_avg_temp(self):
-        sum = 0
+        total = 0
         for n in self.avg_temp_c:
-            sum += n
-        return sum / len(self.avg_temp_c)
+            total += n
+        return total / len(self.avg_temp_c)
 
     def calc_avg_peak_hours(self):
-        sum = 0
+        total = 0
         for n in self.peak_hours_kwh_usage:
-            sum += n
-        return sum / len(self.peak_hours_kwh_usage)
+            total += n
+        return total / len(self.peak_hours_kwh_usage)
 
