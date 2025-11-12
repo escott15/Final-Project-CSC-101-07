@@ -48,12 +48,12 @@ def create_households()->list[Household]:
     return house_data
 
 if __name__ == '__main__':
-    print(create_households()[200].calc_avg_peak_hours())
-    print('\n')
-    print(create_households()[400])
-    print('\n')
+    #print(create_households()[200].calc_avg_peak_hours())
+    #print('\n')
+    #print(create_households()[400])
+    #print('\n')
     print(create_households()[600])
-    print('\n')
+    #print('\n')
 
 
 
