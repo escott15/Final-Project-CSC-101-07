@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="40436d1a-784f-48ac-a032-3239011308c8" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data.py" beforeDir="false" afterPath="$PROJECT_DIR$/data.py" afterDir="false" />
-    </list>
+    <list default="true" id="40436d1a-784f-48ac-a032-3239011308c8" name="Changes" comment="New possible version for organizing data. Bug fixed with run on self.data in the __eq__ when returning that string. Added function to calculate average household energy consumption" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -213,7 +210,23 @@
       <option name="project" value="LOCAL" />
       <updated>1762910921300</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="New possible version for organizing data. Bug fixed with run on self.data in the __eq__ when returning that string. Added function to calculate average household energy consumption">
+      <option name="closed" value="true" />
+      <created>1762914063828</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1762914063828</updated>
+    </task>
+    <task id="LOCAL-00007" summary="New possible version for organizing data. Bug fixed with run on self.data in the __eq__ when returning that string. Added function to calculate average household energy consumption">
+      <option name="closed" value="true" />
+      <created>1762914175955</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1762914175955</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -231,6 +244,7 @@
     <MESSAGE value="updated to contain dataset summary" />
     <MESSAGE value="created class" />
     <MESSAGE value="New possible version for organizing data." />
-    <option name="LAST_COMMIT_MESSAGE" value="New possible version for organizing data." />
+    <MESSAGE value="New possible version for organizing data. Bug fixed with run on self.data in the __eq__ when returning that string. Added function to calculate average household energy consumption" />
+    <option name="LAST_COMMIT_MESSAGE" value="New possible version for organizing data. Bug fixed with run on self.data in the __eq__ when returning that string. Added function to calculate average household energy consumption" />
   </component>
 </project>
