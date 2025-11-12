@@ -71,8 +71,3 @@ class Household:
         for point in self.data:
             total_sum += self.data[point]['peak hours usage kwh']
         return round(total_sum / len(self.data),3)
-
-
-
-
-
