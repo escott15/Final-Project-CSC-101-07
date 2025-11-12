@@ -1,4 +1,4 @@
-from data import Household
+from data import *
 
 
 def create_households()->list[Household]:
