@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="40436d1a-784f-48ac-a032-3239011308c8" name="Changes" comment="New possible version for organizing data. Bug fixed with run on self.data in the __eq__ when returning that string. Added function to calculate average household energy consumption">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data.py" beforeDir="false" afterPath="$PROJECT_DIR$/data.py" afterDir="false" />
-    </list>
+    <list default="true" id="40436d1a-784f-48ac-a032-3239011308c8" name="Changes" comment="Added methods for calculating peak hour consumption in data.py and comparing input values to a threshold value to main.py" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -261,7 +258,15 @@
       <option name="project" value="LOCAL" />
       <updated>1762914689862</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Added methods for calculating peak hour consumption in data.py and comparing input values to a threshold value to main.py">
+      <option name="closed" value="true" />
+      <created>1762915723502</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1762915723504</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -280,6 +285,7 @@
     <MESSAGE value="created class" />
     <MESSAGE value="New possible version for organizing data." />
     <MESSAGE value="New possible version for organizing data. Bug fixed with run on self.data in the __eq__ when returning that string. Added function to calculate average household energy consumption" />
-    <option name="LAST_COMMIT_MESSAGE" value="New possible version for organizing data. Bug fixed with run on self.data in the __eq__ when returning that string. Added function to calculate average household energy consumption" />
+    <MESSAGE value="Added methods for calculating peak hour consumption in data.py and comparing input values to a threshold value to main.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added methods for calculating peak hour consumption in data.py and comparing input values to a threshold value to main.py" />
   </component>
 </project>
