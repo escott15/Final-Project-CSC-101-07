@@ -57,3 +57,10 @@ class Household:
         self.dates == other.dates and
         self.data == other.data
                 )
+
+    # Calculates the average consumption of a household in kWh
+    def calc_avg_consumption(self):
+        sum = 0
+        for point in self.data:
+            sum += self.data[point]['total kwh']
+        return round(sum / len(self.data),3)
