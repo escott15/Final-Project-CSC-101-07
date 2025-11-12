@@ -1,4 +1,5 @@
 import pprint
+from main import insertion_sort
 
 
 """
@@ -72,3 +73,10 @@ class Household:
         for point in self.data:
             total_sum += self.data[point]['peak hours usage kwh']
         return round(total_sum / len(self.data),3)
+    def median_total_kwh(self)->float:
+        median_lst = []
+        for date in self.data:
+            median_lst.append(self.data.get(date).get('total kwh'))
+        insertion_sort(median_lst)
+        median = round(len(median_lst)/2)
+        return median_lst[median]
