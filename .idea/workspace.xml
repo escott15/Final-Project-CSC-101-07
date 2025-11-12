@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="40436d1a-784f-48ac-a032-3239011308c8" name="Changes" comment="New possible version for organizing data. Bug fixed with run on self.data in the __eq__ when returning that string" />
+    <list default="true" id="40436d1a-784f-48ac-a032-3239011308c8" name="Changes" comment="New possible version for organizing data. Bug fixed with run on self.data in the __eq__ when returning that string">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/household_energy_consumption.py" beforeDir="false" afterPath="$PROJECT_DIR$/household_energy_consumption.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,7 +23,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main_sean" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -40,38 +43,38 @@
     &quot;state&quot;: &quot;OPEN&quot;
   }
 }</component>
-  <component name="GitHubPullRequestState"><![CDATA[{
-  "prStates": [
+  <component name="GitHubPullRequestState">{
+  &quot;prStates&quot;: [
     {
-      "id": {
-        "id": "PR_kwDOQPdIhM6yu5yR",
-        "number": 1
+      &quot;id&quot;: {
+        &quot;id&quot;: &quot;PR_kwDOQPdIhM6yu5yR&quot;,
+        &quot;number&quot;: 1
       },
-      "lastSeen": 1762867667994
+      &quot;lastSeen&quot;: 1762867667994
     },
     {
-      "id": {
-        "id": "PR_kwDOQPdIhM6ywcSf",
-        "number": 2
+      &quot;id&quot;: {
+        &quot;id&quot;: &quot;PR_kwDOQPdIhM6ywcSf&quot;,
+        &quot;number&quot;: 2
       },
-      "lastSeen": 1762910263899
+      &quot;lastSeen&quot;: 1762910263899
     },
     {
-      "id": {
-        "id": "PR_kwDOQPdIhM6ywh18",
-        "number": 4
+      &quot;id&quot;: {
+        &quot;id&quot;: &quot;PR_kwDOQPdIhM6ywh18&quot;,
+        &quot;number&quot;: 4
       },
-      "lastSeen": 1762910784257
+      &quot;lastSeen&quot;: 1762910784257
     },
     {
-      "id": {
-        "id": "PR_kwDOQPdIhM6y37X8",
-        "number": 5
+      &quot;id&quot;: {
+        &quot;id&quot;: &quot;PR_kwDOQPdIhM6y37X8&quot;,
+        &quot;number&quot;: 5
       },
-      "lastSeen": 1762911773884
+      &quot;lastSeen&quot;: 1762911773884
     }
   ]
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;git@github.com:escott15/Final-Project-CSC-101-07.git&quot;,
@@ -103,6 +106,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "emilio",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
