@@ -47,7 +47,7 @@ def create_households()->list[Household]:
 
     return house_data
 
-print(create_households()[200])
+print(create_households()[200].calc_avg_peak_hours())
 
 
 
