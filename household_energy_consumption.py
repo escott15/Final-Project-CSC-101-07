@@ -29,7 +29,7 @@ def create_households()->list[Household]:
             has_ac = data[5]
             peak_hours.append(float(data[6]))
         else:
-            house_data.append(Household(i_d, dates, energy_consumption_kwh, int(household_size),avg_temp,has_ac,peak_hours))
+            house_data.append(Household(i_d, dates, energy_consumption_kwh, int(household_size),has_ac,avg_temp,peak_hours))
             i_d = data[0]
             dates = [data[1]]
             energy_consumption_kwh = [float(data[2])]
@@ -37,13 +37,11 @@ def create_households()->list[Household]:
             avg_temp = [float(data[4])]
             has_ac = data[5]
             peak_hours = [float(data[6])]
-    house_data.append(Household(i_d, dates, energy_consumption_kwh, int(household_size),avg_temp,has_ac,peak_hours))
+    house_data.append(Household(i_d, dates, energy_consumption_kwh, int(household_size),has_ac,avg_temp,peak_hours))
     return house_data
 
 print(create_households()[200])
-print(create_households()[201])
-print(create_households()[202])
-print(create_households()[203])
+
 
 
 
