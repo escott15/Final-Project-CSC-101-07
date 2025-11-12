@@ -40,7 +40,7 @@ def create_households()->list[Household]:
     house_data.append(Household(i_d, dates, energy_consumption_kwh, int(household_size),has_ac,avg_temp,peak_hours))
     return house_data
 
-print(create_households()[200])
+print(create_households()[200].calc_avg_peak_hours())
 
 
 
