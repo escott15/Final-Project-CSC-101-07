@@ -8,15 +8,6 @@ Sorts any given list of floats or int into ascending order
 input type: list of floats or int or str
 output type: none 
 """
-def insertion_sort(lst: list[float | int | str ])-> None:
-    for i in range(1, len(lst)):
-        key = lst[i]
-        j = i - 1
-        while j >= 0 and key < lst[j]:
-            lst[j + 1] = lst[j]
-            j -= 1
-        lst[j+1] = key
-
 # Given an input float and a threshold float, return True if input is larger than threshold, return False otherwise
 def over_threshold(value:float,threshold:float)->float:
     if value > threshold:
@@ -28,12 +19,35 @@ the purpose of this function is to get the median of the total_kwh of all the ho
 input type: none
 output type: Float 
 """
-
-def median_households_totalkwh(data=None)-> float:
+def median_calc(arg:str, data:list[int|float|str]=None)-> float | None:
     median_lst = []
+    median = 0
     if data is None:
         data = totaldataorganized
-    for item in data:
-        for date in item:
-            median_lst.append(item.get(date))
+        if arg == 'total kwh':
+            for item in data:
+                for date in item.data:
+                    median_lst.append(item.data.get(date).get('total kwh'))
+            list.sort(median_lst)
+            median = round(len(median_lst) / 2)
+        elif arg == 'peak hours usage kwh':
+            for item in data:
+                for date in item.data:
+                    median_lst.append(item.data.get(date).get('peak hours usage kwh'))
+            list.sort(median_lst)
+            median = round(len(median_lst) / 2)
+        elif arg == 'avg temp c':
+            for item in data:
+                for date in item.data:
+                    median_lst.append(item.data.get(date).get('avg temp c'))
+            list.sort(median_lst)
+            median = round(len(median_lst) / 2)
+    else:
+        for i in data:
+            median_lst.append(i)
+            list.sort(median_lst)
+            median = round(len(median_lst) / 2)
+    return median_lst[median]
 
+if __name__ == '__main__':
+    print(median_calc('peak hours usage kwh'))
