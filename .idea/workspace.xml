@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="40436d1a-784f-48ac-a032-3239011308c8" name="Changes" comment="Added methods for calculating peak hour consumption in data.py and comparing input values to a threshold value to main.py" />
+    <list default="true" id="40436d1a-784f-48ac-a032-3239011308c8" name="Changes" comment="New possible version for organizing data. Bug fixed with run on self.data in the __eq__ when returning that string">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data.py" beforeDir="false" afterPath="$PROJECT_DIR$/data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/household_energy_consumption.py" beforeDir="false" afterPath="$PROJECT_DIR$/household_energy_consumption.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -96,64 +101,45 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Python.household_energy_consumption.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "sean",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python.household_energy_consumption.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;emilio&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
-    <configuration default="true" type="Tox" factoryName="Tox">
+    <configuration name="household_energy_consumption" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Final-Project-CSC-101-07" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/household_energy_consumption.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration default="true" type="docs" factoryName="Docutils task">
-      <module name="Final-Project-CSC-101-07" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="docutils_input_file" value="" />
-      <option name="docutils_output_file" value="" />
-      <option name="docutils_params" value="" />
-      <option name="docutils_task" value="" />
-      <option name="docutils_open_in_browser" value="false" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="docs" factoryName="Sphinx task">
-      <module name="Final-Project-CSC-101-07" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="docutils_input_file" value="" />
-      <option name="docutils_output_file" value="" />
-      <option name="docutils_params" value="" />
-      <option name="docutils_task" value="" />
-      <option name="docutils_open_in_browser" value="false" />
-      <method v="2" />
-    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.household_energy_consumption" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -210,63 +196,7 @@
       <option name="project" value="LOCAL" />
       <updated>1762910921300</updated>
     </task>
-    <task id="LOCAL-00006" summary="New possible version for organizing data. Bug fixed with run on self.data in the __eq__ when returning that string. Added function to calculate average household energy consumption">
-      <option name="closed" value="true" />
-      <created>1762914063828</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1762914063828</updated>
-    </task>
-    <task id="LOCAL-00007" summary="New possible version for organizing data. Bug fixed with run on self.data in the __eq__ when returning that string. Added function to calculate average household energy consumption">
-      <option name="closed" value="true" />
-      <created>1762914175955</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1762914175955</updated>
-    </task>
-    <task id="LOCAL-00008" summary="New possible version for organizing data. Bug fixed with run on self.data in the __eq__ when returning that string. Added function to calculate average household energy consumption">
-      <option name="closed" value="true" />
-      <created>1762914361391</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1762914361391</updated>
-    </task>
-    <task id="LOCAL-00009" summary="New possible version for organizing data. Bug fixed with run on self.data in the __eq__ when returning that string. Added function to calculate average household energy consumption">
-      <option name="closed" value="true" />
-      <created>1762914372518</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1762914372518</updated>
-    </task>
-    <task id="LOCAL-00010" summary="New possible version for organizing data. Bug fixed with run on self.data in the __eq__ when returning that string. Added function to calculate average household energy consumption">
-      <option name="closed" value="true" />
-      <created>1762914490613</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1762914490613</updated>
-    </task>
-    <task id="LOCAL-00011" summary="New possible version for organizing data. Bug fixed with run on self.data in the __eq__ when returning that string. Added function to calculate average household energy consumption">
-      <option name="closed" value="true" />
-      <created>1762914689862</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1762914689862</updated>
-    </task>
-    <task id="LOCAL-00012" summary="Added methods for calculating peak hour consumption in data.py and comparing input values to a threshold value to main.py">
-      <option name="closed" value="true" />
-      <created>1762915723502</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1762915723504</updated>
-    </task>
-    <option name="localTasksCounter" value="13" />
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -284,8 +214,6 @@
     <MESSAGE value="updated to contain dataset summary" />
     <MESSAGE value="created class" />
     <MESSAGE value="New possible version for organizing data." />
-    <MESSAGE value="New possible version for organizing data. Bug fixed with run on self.data in the __eq__ when returning that string. Added function to calculate average household energy consumption" />
-    <MESSAGE value="Added methods for calculating peak hour consumption in data.py and comparing input values to a threshold value to main.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added methods for calculating peak hour consumption in data.py and comparing input values to a threshold value to main.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="New possible version for organizing data." />
   </component>
 </project>
