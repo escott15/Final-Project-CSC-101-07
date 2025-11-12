@@ -1,3 +1,5 @@
+import pprint
+
 """
 house_ID: Identification number for reach house
             format -> HXXXXX (H00001), (H12049)
@@ -44,7 +46,7 @@ class Household:
             self.ac,
             self.dates[0],
             self.dates[-1],
-            self.data
+            pprint.pformat(self.data, indent=4)
         )
     def __eq__(self, other):
         return (self is other or
