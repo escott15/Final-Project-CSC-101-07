@@ -55,9 +55,11 @@ if __name__ == '__main__':
     print(median_calc('peak hours usage kwh'))
 
 
-# Create a function that, given a list of households and an energy consumption threshold value, will return
+# This function that, given a list of households and an energy consumption threshold value, will return
 # a dictionary resembling a statistical two-way table. Each entry of the table will be determined by whether
 # a house has an AC or not and whether a household's energy consumption exceeds the threshold value.
+# Inputs: list[Household], float
+# Output: dict[str,int]
 def create_ac_dict(households:list[Household], threshold:float)->dict[str,int]:
     over_ac = 0
     over_no_ac = 0
@@ -80,10 +82,12 @@ def create_ac_dict(households:list[Household], threshold:float)->dict[str,int]:
         'Underconsumption without AC': under_no_ac,
     }
 
-# Create a function that, given a list of households, a threshold value for total energy consumption and
+# This function that, given a list of households, a threshold value for total energy consumption and
 # a threshold value for consumption during peak hours, will return a dictionary resembling a statistical
 # two-way table. Each entry of the table will be determined by whether a household's total and peak hour
 # energy consumption exceeds the threshold value.
+# Inputs: list[Household], float, float
+# Output: dict[str,int]
 def create_peak_hours_dict(households:list[Household], threshold_t:float, threshold_p:float)->dict[str,int]:
     t_over_p_over = 0
     t_over_p_under = 0
