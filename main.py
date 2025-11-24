@@ -5,17 +5,6 @@ from household_energy_consumption import *
 totaldataorganized = create_households()
 
 """
-Sorts any given list of floats or int into ascending order
-input type: list of floats or int or str
-output type: none 
-"""
-# Given an input float and a threshold float, return True if input is larger than threshold, return False otherwise
-def over_threshold(value:float,threshold:float)->float:
-    if value > threshold:
-        return True
-    else:
-        return False
-"""
 the purpose of this function is to get the median of the total_kwh of all the households
 input type: str, list or None
 output type: Float 
@@ -62,7 +51,7 @@ def create_ac_dict(households:list[Household], threshold:float)->dict[str,int]:
     under_ac = 0
     under_no_ac = 0
     for house in households:
-        over_or_under = over_threshold(house.calc_avg_consumption(), threshold)
+        over_or_under = house.calc_avg_consumption() > threshold
         if over_or_under and house.ac:
             over_ac += 1
         elif over_or_under and not house.ac:
@@ -109,8 +98,8 @@ def create_peak_dict(households:list[Household], threshold_t:float, threshold_p:
     t_under_p_over = 0
     t_under_p_under = 0
     for house in households:
-        over_under_t = over_threshold(house.calc_avg_consumption(), threshold_t)
-        over_under_p = over_threshold(house.calc_avg_peak_hours(), threshold_p)
+        over_under_t = house.calc_avg_consumption() >threshold_t
+        over_under_p = house.calc_avg_peak_hours() > threshold_p
         if over_under_t and over_under_p:
             t_over_p_over += 1
         elif over_under_t and not over_under_p:
