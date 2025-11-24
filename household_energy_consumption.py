@@ -63,7 +63,7 @@ if __name__ == '__main__':
     #print('\n')
     #print(create_households()[400])
     #print('\n')
-    print(create_households()[600])
+    print(create_households()[200].calc_avg_consumption())
     #print('\n')
 
 

@@ -60,15 +60,25 @@ class Household:
                 )
 
     # Calculates the average total consumption of a household in kWh
-    def calc_avg_consumption(self)->float:
+    def calc_avg_consumption(self)->float|None:
         total_sum = 0
         for point in self.data:
             total_sum += self.data[point]['total kwh']
-        return round(total_sum / len(self.data),3)
+        try:
+            return round(total_sum / len(self.data), 3)
+        except ZeroDivisionError as e:
+            print(e)
+            exit()
+
 
     # Calculates the average peak hour consumption of a household in kWh
     def calc_avg_peak_hours(self)->float:
         total_sum = 0
         for point in self.data:
             total_sum += self.data[point]['peak hours usage kwh']
-        return round(total_sum / len(self.data),3)
+        try:
+            return round(total_sum / len(self.data), 3)
+        except ZeroDivisionError as e:
+            print(e)
+            exit()
+
