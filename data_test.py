@@ -12,6 +12,14 @@ class MyTestCase(unittest.TestCase):
         result = data[200].calc_avg_consumption()
         self.assertEqual(3.814, result)
 
+    def test_calc_avg_peak_hours_1(self):
+        result = data[0].calc_avg_peak_hours()
+        self.assertEqual(2.986, result)
+
+    def test_calc_avg_peak_hours_2(self):
+        result = data[200].calc_avg_peak_hours()
+        self.assertEqual(1.729, result)
+
 
 
 
