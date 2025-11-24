@@ -13,6 +13,11 @@ class TestCases(unittest.TestCase):
         expected = 3
         result = median_calc("_",_input)
         self.assertEqual(expected, result)
+    def test_median_calc3(self):
+        _input = 3
+        expected = None 
+        result = median_calc("_", _input)
+        self.assertEqual(expected, result)
 
 if __name__ == '__main__':
     unittest.main()

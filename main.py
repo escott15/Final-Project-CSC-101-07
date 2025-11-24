@@ -33,10 +33,14 @@ def median_calc(arg:str, data:list[int|float|str]=None)-> float | None:
             list.sort(median_lst)
             median = round(len(median_lst) / 2)
     else:
-        for i in data:
-            median_lst.append(i)
-            list.sort(median_lst)
-            median = round(len(median_lst) / 2)
+        if type(data) != list: 
+            print("please enter list[ int | float | str ] in 'data' argument in median_calc func")
+            return
+        else:
+            for i in data:
+                median_lst.append(i)
+                list.sort(median_lst)
+                median = round(len(median_lst) / 2)
     return median_lst[median]
 
 # This function that, given a list of households and a total energy consumption threshold value, will return
